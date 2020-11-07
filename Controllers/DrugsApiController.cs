@@ -26,10 +26,10 @@ namespace MfpeDrugsApi.Controllers
         [HttpGet("{id:int}", Name = "Get")]
         public IActionResult searchDrugsByID(int id)
         {
-            _log4net.Info("Drug ID " + id + " Entered For Searching");
-            if (id <= 0)
-                return BadRequest();
-            return Ok(_prov.searchDrugsByID(id));
+                _log4net.Info("Drug ID " + id + " Entered For Searching");
+                if (id <= 0)
+                    return BadRequest();
+                return Ok(_prov.searchDrugsByID(id));    
         }
 
 
@@ -38,7 +38,7 @@ namespace MfpeDrugsApi.Controllers
         {
             _log4net.Info(" Drug Name "+name+" Entered For Searching");
             if (name == null)
-                 return BadRequest();
+                return BadRequest();
             return Ok(_prov.searchDrugsByName(name));
         }
 
