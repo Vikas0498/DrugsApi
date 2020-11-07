@@ -11,31 +11,35 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MfpeDrugsApi.Controllers
 {
-   [Route("api/[controller]/[action]")]
-   [ApiController]
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class DrugsApiController : ControllerBase
     {
         static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(DrugsApiController));
         IProvider _prov;
-        
+
         public DrugsApiController(IProvider drugprov)
         {
             _prov = drugprov;
 
         }
         [HttpGet("{id:int}", Name = "Get")]
-        public List<LocationWiseDrug> searchDrugsByID(int id)
+        public IActionResult searchDrugsByID(int id)
         {
-            _log4net.Info("Id Entered For Searching");
-            return _prov.searchDrugsByID(id);
+            _log4net.Info("Drug ID " + id + " Entered For Searching");
+            if (id <= 0)
+                return BadRequest();
+            return Ok(_prov.searchDrugsByID(id));
         }
 
 
         [HttpGet("{name}")]
-        public List<LocationWiseDrug> searchDrugsByName(string name)
+        public IActionResult searchDrugsByName(string name)
         {
-            _log4net.Info("Name Entered For Searching");
-            return _prov.searchDrugsByName(name);
+            _log4net.Info(" Drug Name "+name+" Entered For Searching");
+            if (name == null)
+                 return BadRequest();
+            return Ok(_prov.searchDrugsByName(name));
         }
 
          /*   [HttpPost]
@@ -46,11 +50,12 @@ namespace MfpeDrugsApi.Controllers
             return obj.getDispatchableDrugStock((int)model.Id, (string)model.Location);
         }*/
         [HttpPost("{DrugId}/{Location}")]
-        public bool getDispatchableDrugStock([FromRoute] int DrugId, string Location)
+        public IActionResult getDispatchableDrugStock([FromRoute] int DrugId, string Location)
         {
-            _log4net.Info("Input Recieved From Another Api");
-            DrugRepository obj = new DrugRepository();
-            return obj.getDispatchableDrugStock(DrugId, Location);
+            _log4net.Info("Drug Id = "+DrugId+" and Location = "+Location+" Recieved From refill Api");
+            if (DrugId <= 0 || Location == null)
+                return BadRequest();
+            return Ok(_prov.getDispatchableDrugStock(DrugId, Location));
         }
 
     }

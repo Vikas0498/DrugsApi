@@ -18,9 +18,9 @@ namespace MfpeDrugsApi.Provider
 
         public bool getDispatchableDrugStock(int id, string location)
         {
-           //DrugRepository obj1 = new DrugRepository();
-           // return obj1.getDispatchableDrugStock(DrugId,Location);
-          return getDispatchableDrugStock(id,location);
+            // DrugRepository obj1 = new DrugRepository();
+            // return obj1.getDispatchableDrugStock(DrugId,Location);
+            return _item.getDispatchableDrugStock(id,location);  
         }
 
         public List<LocationWiseDrug> searchDrugsByID(int id)

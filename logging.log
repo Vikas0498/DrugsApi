@@ -161,3 +161,248 @@ INFO  12:42:05 Input Recieved From Another Api
 INFO  12:42:05 Response sent according to the data recieved by calling API
 INFO  12:42:15 Input Recieved From Another Api
 INFO  12:42:15 Response sent according to the data recieved by calling API
+INFO  01:24:49 Application started. Press Ctrl+C to shut down.
+INFO  01:24:49 Hosting environment: Development
+INFO  01:24:49 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:28:47 Name Entered For Searching
+INFO  01:28:47 Searchng started according to Name
+INFO  01:28:47 Drugs Details Returned According to Name
+INFO  01:29:31 Name Entered For Searching
+INFO  01:29:31 Searchng started according to Name
+INFO  01:29:31 Drugs Details Returned According to Name
+INFO  01:33:51 Application started. Press Ctrl+C to shut down.
+INFO  01:33:51 Hosting environment: Development
+INFO  01:33:51 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:36:54 Name Entered For Searching
+INFO  01:36:54 Searchng started according to Name
+INFO  01:36:54 Drugs Details Returned According to Name
+INFO  01:37:22 Name Entered For Searching
+INFO  01:37:22 Searchng started according to Name
+INFO  01:37:22 Drugs Details Returned According to Name
+INFO  10:12:46 Application started. Press Ctrl+C to shut down.
+INFO  10:12:46 Hosting environment: Development
+INFO  10:12:46 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  10:12:58 Id Entered For Searching
+INFO  10:12:58 Searchng started according to Id
+INFO  10:12:58 Drugs Details Returned According to Id
+INFO  10:32:02 Name Entered For Searching
+INFO  10:32:02 Searchng started according to Name
+INFO  10:32:02 Drugs Details Returned According to Name
+INFO  10:36:08 Application started. Press Ctrl+C to shut down.
+INFO  10:36:08 Hosting environment: Development
+INFO  10:36:08 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  10:41:00 Name Entered For Searching
+INFO  10:41:00 Searchng started according to Name
+INFO  10:41:00 Drugs Details Returned According to Name
+INFO  12:38:54 Application started. Press Ctrl+C to shut down.
+INFO  12:38:54 Hosting environment: Development
+INFO  12:38:54 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:06:46 Application started. Press Ctrl+C to shut down.
+INFO  01:06:46 Hosting environment: Development
+INFO  01:06:46 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:07:03 Input Recieved From Another Api
+INFO  01:07:34 Application started. Press Ctrl+C to shut down.
+INFO  01:07:34 Hosting environment: Development
+INFO  01:07:34 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:07:54 Input Recieved From Another Api
+INFO  01:11:10 Application started. Press Ctrl+C to shut down.
+INFO  01:11:10 Hosting environment: Development
+INFO  01:11:10 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:11:24 Input Recieved From Another Api
+INFO  01:11:24 Response sent according to the data recieved by calling API
+INFO  01:20:54 Application started. Press Ctrl+C to shut down.
+INFO  01:20:54 Hosting environment: Development
+INFO  01:20:54 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:21:16 Input Recieved From Another Api
+INFO  01:21:16 Response sent according to the data recieved by calling API
+INFO  01:22:49 Application started. Press Ctrl+C to shut down.
+INFO  01:22:49 Hosting environment: Development
+INFO  01:22:49 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:23:01 Input Recieved From Another Api
+ERROR 01:23:30 An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at MfpeDrugsApi.Provider.DrugProvider.getDispatchableDrugStock(Int32 id, String location) in C:\Users\pande\source\repos\MfpeDrugsApi\Provider\DrugProvider.cs:line 24
+   at MfpeDrugsApi.Controllers.DrugsApiController.getDispatchableDrugStock(Int32 DrugId, String Location) in C:\Users\pande\source\repos\MfpeDrugsApi\Controllers\DrugsApiController.cs:line 53
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  01:50:07 Application started. Press Ctrl+C to shut down.
+INFO  01:50:07 Hosting environment: Development
+INFO  01:50:07 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  01:50:19 Id Entered For Searching
+INFO  01:50:19 Searchng started according to Id
+INFO  01:50:19 Drugs Details Returned According to Id
+INFO  01:50:26 Id Entered For Searching
+INFO  01:50:26 Searchng started according to Id
+INFO  01:50:26 Drugs Details Returned According to Id
+INFO  01:50:42 Name Entered For Searching
+INFO  01:50:42 Searchng started according to Name
+INFO  01:50:42 Drugs Details Returned According to Name
+INFO  01:50:57 Name Entered For Searching
+INFO  01:50:57 Searchng started according to Name
+INFO  01:50:57 Drugs Details Returned According to Name
+INFO  01:51:17 Input Recieved From Another Api
+INFO  01:51:17 Response sent according to the data recieved by calling API
+INFO  01:51:36 Input Recieved From Another Api
+INFO  01:51:36 Response sent according to the data recieved by calling API
+INFO  01:51:44 Input Recieved From Another Api
+INFO  01:51:44 Response sent according to the data recieved by calling API
+INFO  01:51:50 Input Recieved From Another Api
+INFO  01:51:50 Response sent according to the data recieved by calling API
+INFO  01:51:59 Input Recieved From Another Api
+INFO  01:51:59 Response sent according to the data recieved by calling API
+INFO  02:43:12 Application started. Press Ctrl+C to shut down.
+INFO  02:43:12 Hosting environment: Development
+INFO  02:43:12 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  03:35:09 Application started. Press Ctrl+C to shut down.
+INFO  03:35:09 Hosting environment: Development
+INFO  03:35:09 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  03:35:31 DisprinName Entered For Searching
+INFO  03:35:31 Searchng started according to Name
+INFO  03:35:31 Drugs Details Returned According to Name
+INFO  03:35:45 1Id Entered For Searching
+INFO  03:35:45 Searchng started according to Id
+INFO  03:35:45 Drugs Details Returned According to Id
+INFO  10:56:19 Application started. Press Ctrl+C to shut down.
+INFO  10:56:19 Hosting environment: Development
+INFO  10:56:19 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  10:56:30 Drug ID 1 Entered For Searching
+INFO  10:56:30 Searchng started according to DrugId = 1
+INFO  10:56:30 Drugs Details Returned According to DrugId = 1
+INFO  10:56:41  Drug Name Disprin Entered For Searching
+INFO  10:56:41 Searchng started according to Name = Disprin
+INFO  10:56:41 Drugs Details Returned According to Name = Disprin
+INFO  11:58:03 Application started. Press Ctrl+C to shut down.
+INFO  11:58:03 Hosting environment: Development
+INFO  11:58:03 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  11:58:18 Drug ID 1 Entered For Searching
+INFO  11:58:18 Searchng started according to DrugId = 1
+INFO  11:58:18 Drugs Details Returned According to DrugId = 1
+INFO  11:58:27 Drug ID 2 Entered For Searching
+INFO  11:58:27 Searchng started according to DrugId = 2
+INFO  11:58:27 Drugs Details Returned According to DrugId = 2
+INFO  11:58:40  Drug Name Disprin Entered For Searching
+INFO  11:58:40 Searchng started according to Name = Disprin
+INFO  11:58:40 Drugs Details Returned According to Name = Disprin
+INFO  11:58:53  Drug Name Paracetamol Entered For Searching
+INFO  11:58:53 Searchng started according to Name = Paracetamol
+INFO  11:58:53 Drugs Details Returned According to Name = Paracetamol
+INFO  11:59:12 Drug Id = 1 and Location = Delhi Recieved From refill Api
+INFO  11:59:12 Response sent according to the DrugId = 1 and Location = Delhi recieved
+INFO  11:59:21 Drug Id = 1 and Location = Dehradun Recieved From refill Api
+INFO  11:59:21 Response sent according to the DrugId = 1 and Location = Dehradun recieved
+INFO  11:59:35 Drug Id = 2 and Location = Dehradun Recieved From refill Api
+INFO  11:59:35 Response sent according to the DrugId = 2 and Location = Dehradun recieved
+INFO  12:26:13 Application started. Press Ctrl+C to shut down.
+INFO  12:26:13 Hosting environment: Development
+INFO  12:26:13 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  12:28:42 Application started. Press Ctrl+C to shut down.
+INFO  12:28:42 Hosting environment: Development
+INFO  12:28:42 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  12:29:13  Drug Name 0 Entered For Searching
+INFO  12:29:13 Searchng started according to Name = 0
+INFO  12:29:13 Drugs Details Returned According to Name = 0
+INFO  12:29:41 Drug ID 0 Entered For Searching
+INFO  12:30:47 Drug Id = 0 and Location = sad Recieved From refill Api
+INFO  10:30:13 Application started. Press Ctrl+C to shut down.
+INFO  10:30:13 Hosting environment: Development
+INFO  10:30:13 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  10:30:26 Drug ID -7 Entered For Searching
+INFO  10:30:45 Drug ID 0 Entered For Searching
+INFO  10:31:09 Drug ID 1 Entered For Searching
+INFO  10:31:09 Searchng started according to DrugId = 1
+INFO  10:31:09 Drugs Details Returned According to DrugId = 1
+INFO  10:31:15 Drug ID 2 Entered For Searching
+INFO  10:31:15 Searchng started according to DrugId = 2
+INFO  10:31:15 Drugs Details Returned According to DrugId = 2
+INFO  10:31:32  Drug Name 11233 Entered For Searching
+INFO  10:31:32 Searchng started according to Name = 11233
+INFO  10:31:32 Drugs Details Returned According to Name = 11233
+INFO  10:31:42  Drug Name zdjdlshdzd Entered For Searching
+INFO  10:31:42 Searchng started according to Name = zdjdlshdzd
+INFO  10:31:42 Drugs Details Returned According to Name = zdjdlshdzd
+INFO  10:33:04 Drug Id = -12 and Location = 13 Recieved From refill Api
+INFO  10:33:18 Drug Id = 12 and Location = 343 Recieved From refill Api
+INFO  10:33:18 Response sent according to the DrugId = 12 and Location = 343 recieved
+INFO  12:04:34 Application started. Press Ctrl+C to shut down.
+INFO  12:04:34 Hosting environment: Development
+INFO  12:04:34 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  12:04:50 Drug ID -1 Entered For Searching
+INFO  12:05:02 Drug ID 12 Entered For Searching
+INFO  12:05:02 Searchng started according to DrugId = 12
+INFO  12:05:02 Drugs Details Returned According to DrugId = 12
+INFO  12:05:12 Drug ID 1 Entered For Searching
+INFO  12:05:12 Searchng started according to DrugId = 1
+INFO  12:05:12 Drugs Details Returned According to DrugId = 1
+INFO  12:05:24 Drug ID 2 Entered For Searching
+INFO  12:05:24 Searchng started according to DrugId = 2
+INFO  12:05:24 Drugs Details Returned According to DrugId = 2
+INFO  12:32:55 Application started. Press Ctrl+C to shut down.
+INFO  12:32:55 Hosting environment: Development
+INFO  12:32:55 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  12:35:08  Drug Name asd Entered For Searching
+INFO  12:35:08 Searchng started according to Name = asd
+INFO  12:35:08 Drugs Details Returned According to Name = asd
+INFO  12:41:27 Application started. Press Ctrl+C to shut down.
+INFO  12:41:27 Hosting environment: Development
+INFO  12:41:27 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  12:55:02 Application started. Press Ctrl+C to shut down.
+INFO  12:55:03 Hosting environment: Development
+INFO  12:55:03 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  12:55:32 Drug ID 1 Entered For Searching
+INFO  12:55:32 Searchng started according to DrugId = 1
+INFO  12:55:32 Drugs Details Returned According to DrugId = 1
+INFO  12:55:43 Drug ID -1 Entered For Searching
+INFO  12:55:52 Drug ID 0 Entered For Searching
+INFO  12:56:04 Drug ID 788 Entered For Searching
+INFO  12:56:04 Searchng started according to DrugId = 788
+INFO  12:56:04 Drugs Details Returned According to DrugId = 788
+INFO  12:56:16  Drug Name 12123 Entered For Searching
+INFO  12:56:16 Searchng started according to Name = 12123
+INFO  12:56:16 Drugs Details Returned According to Name = 12123
+INFO  12:56:32  Drug Name null Entered For Searching
+INFO  12:56:32 Searchng started according to Name = null
+INFO  12:56:32 Drugs Details Returned According to Name = null
+INFO  12:57:07  Drug Name Disprin Entered For Searching
+INFO  12:57:07 Searchng started according to Name = Disprin
+INFO  12:57:07 Drugs Details Returned According to Name = Disprin
+INFO  12:57:23  Drug Name Paracetamol Entered For Searching
+INFO  12:57:23 Searchng started according to Name = Paracetamol
+INFO  12:57:23 Drugs Details Returned According to Name = Paracetamol
+INFO  12:57:30  Drug Name 12323 Entered For Searching
+INFO  12:57:30 Searchng started according to Name = 12323
+INFO  12:57:30 Drugs Details Returned According to Name = 12323
+INFO  12:57:39  Drug Name hghh Entered For Searching
+INFO  12:57:39 Searchng started according to Name = hghh
+INFO  12:57:39 Drugs Details Returned According to Name = hghh
+INFO  12:58:18 Drug Id = 1 and Location = Delhi Recieved From refill Api
+INFO  12:58:18 Response sent according to the DrugId = 1 and Location = Delhi recieved
+INFO  12:58:29 Drug Id = 1 and Location = Rishikesh Recieved From refill Api
+INFO  12:58:29 Response sent according to the DrugId = 1 and Location = Rishikesh recieved
+INFO  12:58:38 Drug Id = 1 and Location = 2342 Recieved From refill Api
+INFO  12:58:38 Response sent according to the DrugId = 1 and Location = 2342 recieved
+INFO  12:58:44 Drug Id = 1 and Location = sfjdh Recieved From refill Api
+INFO  12:58:44 Response sent according to the DrugId = 1 and Location = sfjdh recieved
+INFO  12:59:00 Drug Id = 2 and Location = Dehradun Recieved From refill Api
+INFO  12:59:00 Response sent according to the DrugId = 2 and Location = Dehradun recieved
+INFO  12:59:07 Drug Id = 2 and Location = dekd Recieved From refill Api
+INFO  12:59:07 Response sent according to the DrugId = 2 and Location = dekd recieved
+INFO  12:59:16 Drug Id = 2 and Location = Delhi Recieved From refill Api
+INFO  12:59:16 Response sent according to the DrugId = 2 and Location = Delhi recieved
+INFO  12:59:27 Drug Id = -1 and Location = Delhi Recieved From refill Api
+INFO  12:59:52 Drug Id = 0 and Location = Delhi Recieved From refill Api
